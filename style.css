@@ -1,0 +1,198 @@
+body,*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+h1{
+     margin: 30px;
+}
+.div1{
+    background-image: url(./img/bc-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 650px;
+    height: 690px;
+    box-shadow: 0 10px 20px 10px rgba(0, 0, 255, 0.26);
+}
+.btn-div{
+
+margin: 200px 120px;
+}
+.btn-div button{
+width: 384px;
+height: 34px;
+background-color: white;
+border: none;
+border-radius: 50px;
+justify-content: center;
+display: flex;
+align-items: center;
+transition: .4s ease;
+}
+.btn-div button i{
+    font-size: 25px;
+    color: #03A9F4;
+}
+.btn-div button span{
+    color: #707070;
+    margin-left: 10px;
+}
+.btn-div button:hover{
+    background-color: #03A9F4;
+}
+.btn-div button:hover span,.btn-div button:hover i{
+    color: white;
+}
+.d-flax{
+    display: flex;
+    align-items: center;
+}
+
+.h1-div{
+    text-align: center;
+}
+.h1-div h2{
+    font-size: 45px;
+    color:#4F4F4F;
+    margin-bottom: 10px;
+    margin-top: -50px;
+}
+
+.h1-div p{
+    font-size: 25px;
+color: rgba(79, 79, 79, 0.8);
+}
+
+form .inp{
+width: 385px;
+height: 25px;
+font-size: 20px;
+color: #4F4F4F;
+outline: none;
+border-radius: 5px;
+border: 1px solid #4F4F4F;
+padding-left: 10px;
+
+}
+.form-label{
+margin-top: 100px;
+}
+.form-label1 input{
+width: 20px;
+height: 20px;
+
+}
+.form-label1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #4F4F4F;
+}
+form {
+    margin-left: 150px;
+}
+.label-name{
+    color: #4F4F4F;  
+}
+.btn-sign-up{
+    width: 384px;
+    height: 34px;
+    border-radius: 50px;
+    border: none;
+    background-color:#03A9F4;
+    color: white;
+    transition: .4s;
+    opacity: .2;
+}
+
+.btn-sign-in:hover{
+    background-color:#03A9F4;
+    color: white;
+}
+.btn-sign-in{
+    background-color: white;
+    color: #03A9F4;
+    border: 1px solid #03A9F4;
+    cursor: pointer;
+}
+.btn-sign-up.btn-sign-in{
+    opacity: 1;
+}
+.inp:valid~.label-name{
+   transform: scale(0);
+   color: red;
+}
+.chek-box{
+    transition: .4s;
+    border: 1px solid #03A9F4;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.chek-box.chakBox{
+    background-color: #03A9F4;
+}
+.chek-box i {
+color: white;
+    font-size: 20px;
+}
+.oust-div{
+    background-color: transparent;
+    width: 390px;
+    border-radius: 50px;
+    height: 35px;
+    position: relative;
+    margin-top: -35px;
+    z-index: 2;
+}
+.oust-div2{
+    display: none;
+}
+.all-new{
+    width: 0;
+    height: 0;
+    display: none;
+}
+@media screen and (max-width:768px) {
+    .d-flax{
+        display: grid;
+        gap: 100px;
+    }
+    .div1{
+        width: 100%;
+    }
+    .btn-div{
+        margin-left: 200px;
+    }
+    .div2{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:768px) {
+    .all-new{
+        width: 300px;
+        height: 300px;
+       color: transparent;
+       display: block;
+    }
+    .div2{
+        margin-right: 100px;
+        margin-left: -80px;
+    }
+}
+@media screen and (min-width:1024px) {
+    .div2{
+        margin-right: 100px;
+        margin-left: -80px;
+    }
+    .all-new{
+        width: 300px;
+        height: 300px;
+       color: transparent;
+       display: block;
+    }
+}
